@@ -12,9 +12,9 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
-    
-    - name: 📂 Sync files
-      uses: mdallasanta/ssh-scp-deploy@1.2.0
+  
+    - name: ssh-scp-deploy
+      uses: marcodallasanta/ssh-scp-deploy@v1.2.0    
       with:
         local: './'                                                  # Local file path - REQUIRED false - DEFAULT ./
         remote: '/var/www/html'                                      # Remote file path - REQUIRED false - DEFAULT ~/
